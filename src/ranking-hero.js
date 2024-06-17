@@ -16,6 +16,8 @@ var heroi =
 
 for (let n in heroi) {
 
+    heroi[n][1] = Math.floor(Math.random() * 10100)
+
     if (heroi[n][1] <= 1000) {
         heroi[n][2] = "Ferro"
     } else if (heroi[n][1] <= 2000 && heroi[n][1] > 1001) {
